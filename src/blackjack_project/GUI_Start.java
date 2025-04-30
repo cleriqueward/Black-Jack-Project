@@ -26,15 +26,27 @@ public class GUI_Start extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Exit1 = new javax.swing.JButton();
+        Popup_Settings = new javax.swing.JInternalFrame();
+        Settings1 = new javax.swing.JButton();
+        Settings2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jSlider1 = new javax.swing.JSlider();
+        jLabel9 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        Rules = new javax.swing.JButton();
+        Settings = new javax.swing.JButton();
+        Exit = new javax.swing.JButton();
+        Start = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
         Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,66 +54,149 @@ public class GUI_Start extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Exit1.setBackground(new java.awt.Color(0, 152, 255));
+        Exit1.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        Exit1.setForeground(new java.awt.Color(255, 255, 255));
+        Exit1.setText("Exit");
+        Exit1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Exit1.setOpaque(true);
+        Exit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Exit1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Exit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 0, 0));
+
+        Popup_Settings.setClosable(true);
+        Popup_Settings.setTitle("Settings");
+        Popup_Settings.setToolTipText("");
+        Popup_Settings.setVisible(false);
+        Popup_Settings.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Settings1.setBackground(new java.awt.Color(0, 153, 255));
+        Settings1.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Settings1.setForeground(new java.awt.Color(255, 255, 255));
+        Settings1.setText("Apply");
+        Settings1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Settings1.setOpaque(true);
+        Settings1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Settings1ActionPerformed(evt);
+            }
+        });
+        Popup_Settings.getContentPane().add(Settings1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 95, 30));
+
+        Settings2.setBackground(new java.awt.Color(0, 153, 255));
+        Settings2.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Settings2.setForeground(new java.awt.Color(255, 255, 255));
+        Settings2.setText("Cancel");
+        Settings2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Settings2.setOpaque(true);
+        Settings2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Settings2ActionPerformed(evt);
+            }
+        });
+        Popup_Settings.getContentPane().add(Settings2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 95, 30));
+
+        jTextField1.setText("2");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        Popup_Settings.getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 140, 30));
+
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel4.setText("Game Mode");
+        Popup_Settings.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, 30));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1x", "2x", "3x", "4x" }));
+        jComboBox1.setBorder(null);
+        Popup_Settings.getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 140, 30));
+
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel6.setText("Game Sounds");
+        Popup_Settings.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, -1, 30));
+
+        jLabel7.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel7.setText("Starting Balance");
+        Popup_Settings.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, 30));
+
+        jTextField2.setText("465");
+        Popup_Settings.getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 140, 30));
+
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel8.setText("CPU Players");
+        Popup_Settings.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, 30));
+        Popup_Settings.getContentPane().add(jSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 160, -1));
+
+        jLabel9.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel9.setText("Volume");
+        Popup_Settings.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, 30));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Standard", "Lose with Joker", "Race to $1000" }));
+        jComboBox2.setBorder(null);
+        Popup_Settings.getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 140, 30));
+
+        jLabel10.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel10.setText("Game Speed");
+        Popup_Settings.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 30));
+
+        jCheckBox1.setSelected(true);
+        Popup_Settings.getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, 30, 30));
+
+        getContentPane().add(Popup_Settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 500, 400));
+
+        Rules.setBackground(new java.awt.Color(0, 152, 255));
+        Rules.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        Rules.setForeground(new java.awt.Color(255, 255, 255));
+        Rules.setText("View Rules");
+        Rules.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Rules.setOpaque(true);
+        getContentPane().add(Rules, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 530, 40));
+
+        Settings.setBackground(new java.awt.Color(0, 152, 255));
+        Settings.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        Settings.setForeground(new java.awt.Color(255, 255, 255));
+        Settings.setText("Settings");
+        Settings.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Settings.setOpaque(true);
+        Settings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SettingsActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 530, 40));
+
+        Exit.setBackground(new java.awt.Color(0, 152, 255));
+        Exit.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        Exit.setForeground(new java.awt.Color(255, 255, 255));
+        Exit.setText("Exit");
+        Exit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Exit.setOpaque(true);
+        Exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 530, 40));
+
+        Start.setBackground(new java.awt.Color(0, 152, 255));
+        Start.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
+        Start.setForeground(new java.awt.Color(255, 255, 255));
+        Start.setText("Start Game");
+        Start.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Start.setOpaque(true);
+        Start.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StartActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Start, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 530, 40));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Logo.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 560, 280));
-
-        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
-        jPanel1.setLayout(new java.awt.GridLayout());
-
-        jButton2.setBackground(new java.awt.Color(0, 152, 255));
-        jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("View Rules");
-        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jPanel1.add(jButton2);
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 530, 40));
-
-        jPanel3.setBackground(new java.awt.Color(0, 153, 255));
-        jPanel3.setLayout(new java.awt.GridLayout());
-
-        jButton3.setBackground(new java.awt.Color(0, 152, 255));
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Settings");
-        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jPanel3.add(jButton3);
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 530, 40));
-
-        jPanel4.setBackground(new java.awt.Color(0, 153, 255));
-        jPanel4.setLayout(new java.awt.GridLayout());
-
-        jButton4.setBackground(new java.awt.Color(0, 152, 255));
-        jButton4.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Exit");
-        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton4);
-
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 520, 530, 40));
-
-        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
-        jPanel2.setLayout(new java.awt.GridLayout());
-
-        jButton5.setBackground(new java.awt.Color(0, 152, 255));
-        jButton5.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Start Game");
-        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton5);
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 530, 40));
 
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BG_main-dark.png"))); // NOI18N
         Background.setText("jLabel1");
@@ -110,17 +205,40 @@ public class GUI_Start extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void StartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartActionPerformed
         // TODO add your handling code here:
         GUI_Main Main = new GUI_Main();
         Main.setVisible(true);
         dispose();
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_StartActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         // TODO add your handling code here:
         dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_ExitActionPerformed
+
+    private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
+        // TODO add your handling code here:
+        Popup_Settings.setVisible(true);
+    }//GEN-LAST:event_SettingsActionPerformed
+
+    private void Exit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Exit1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Exit1ActionPerformed
+
+    private void Settings1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Settings1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Settings1ActionPerformed
+
+    private void Settings2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Settings2ActionPerformed
+        // TODO add your handling code here:
+        Popup_Settings.setVisible(false);
+    }//GEN-LAST:event_Settings2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,14 +280,26 @@ public class GUI_Start extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Background;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton Exit;
+    private javax.swing.JButton Exit1;
+    private javax.swing.JInternalFrame Popup_Settings;
+    private javax.swing.JButton Rules;
+    private javax.swing.JButton Settings;
+    private javax.swing.JButton Settings1;
+    private javax.swing.JButton Settings2;
+    private javax.swing.JButton Start;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JSlider jSlider1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

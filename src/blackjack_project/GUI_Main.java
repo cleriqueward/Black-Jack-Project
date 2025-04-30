@@ -88,7 +88,7 @@ public class GUI_Main extends javax.swing.JFrame {
         Current_Bet.setLayout(new java.awt.CardLayout());
 
         jLabel18.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel18.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("$200");
         jLabel18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -111,7 +111,7 @@ public class GUI_Main extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/10Spades.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 80, 100));
 
-        Name.setBackground(new java.awt.Color(59, 59, 59));
+        Name.setBackground(new java.awt.Color(0, 204, 0));
         Name.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
         jLabel11.setBackground(new java.awt.Color(59, 59, 59));
@@ -123,7 +123,7 @@ public class GUI_Main extends javax.swing.JFrame {
 
         getContentPane().add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 100, -1));
 
-        Balance.setBackground(new java.awt.Color(59, 59, 59));
+        Balance.setBackground(new java.awt.Color(0, 204, 0));
         Balance.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         Balance.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 3));
 
@@ -262,8 +262,12 @@ public class GUI_Main extends javax.swing.JFrame {
         });
         getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, 80, 30));
 
-        jLabel19.setText("Current Bet");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
+        jLabel19.setBackground(new java.awt.Color(51, 51, 51));
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText(" Current Bet");
+        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jLabel19.setOpaque(true);
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 90, 20));
 
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BG_main.png"))); // NOI18N
         Background.setText("jLabel1");
