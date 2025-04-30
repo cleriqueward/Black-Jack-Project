@@ -26,91 +26,258 @@ public class GUI_Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel17 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        Current_Bet = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        Name = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        Balance = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        P1_Name = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        P1_Balance = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        P2_Name = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        P2_Balance = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        D_Name = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        Double = new javax.swing.JButton();
+        Split = new javax.swing.JButton();
+        Stay = new javax.swing.JButton();
+        Hit = new javax.swing.JButton();
+        Table = new javax.swing.JLabel();
+        Rules = new javax.swing.JButton();
+        Settings = new javax.swing.JButton();
+        Exit = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/GameTable.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, 350));
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/b1fv.png"))); // NOI18N
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 80, 100));
 
-        jButton2.setBackground(new java.awt.Color(0, 153, 255));
-        jButton2.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Stay");
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/JackHearts.png"))); // NOI18N
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 280, 80, 100));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/6Hearts.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 80, 100));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/AceHearts.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 80, 100));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/9Spades.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 80, 100));
+
+        Current_Bet.setBackground(new java.awt.Color(255, 255, 255));
+        Current_Bet.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Current_Bet.setLayout(new java.awt.CardLayout());
+
+        jLabel18.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel18.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("$200");
+        jLabel18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Current_Bet.add(jLabel18, "card2");
+
+        getContentPane().add(Current_Bet, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 150, 40));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/QueenHearts.png"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, 80, 100));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/6Clubs.png"))); // NOI18N
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 280, 80, 100));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/3Hearts.png"))); // NOI18N
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 280, 80, 100));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/5Diamonds.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 80, 100));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cards/10Spades.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 80, 100));
+
+        Name.setBackground(new java.awt.Color(59, 59, 59));
+        Name.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jLabel11.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel11.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Kenneth");
+        jLabel11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Name.add(jLabel11);
+
+        getContentPane().add(Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 100, -1));
+
+        Balance.setBackground(new java.awt.Color(59, 59, 59));
+        Balance.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Balance.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 3));
+
+        jLabel6.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel6.setFont(new java.awt.Font("Helvetica Neue", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("$465");
+        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Balance.add(jLabel6);
+
+        getContentPane().add(Balance, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 470, 60, 20));
+
+        P1_Name.setBackground(new java.awt.Color(59, 59, 59));
+        P1_Name.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jLabel9.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel9.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Player 1");
+        jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        P1_Name.add(jLabel9);
+
+        getContentPane().add(P1_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 100, -1));
+
+        P1_Balance.setBackground(new java.awt.Color(59, 59, 59));
+        P1_Balance.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        P1_Balance.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 3));
+
+        jLabel10.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel10.setFont(new java.awt.Font("Helvetica Neue", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("$1002");
+        jLabel10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        P1_Balance.add(jLabel10);
+
+        getContentPane().add(P1_Balance, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 60, 20));
+
+        P2_Name.setBackground(new java.awt.Color(59, 59, 59));
+        P2_Name.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jLabel8.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel8.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Player 2");
+        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        P2_Name.add(jLabel8);
+
+        getContentPane().add(P2_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 390, 100, -1));
+
+        P2_Balance.setBackground(new java.awt.Color(59, 59, 59));
+        P2_Balance.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        P2_Balance.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 3));
+
+        jLabel7.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel7.setFont(new java.awt.Font("Helvetica Neue", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("$270");
+        jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        P2_Balance.add(jLabel7);
+
+        getContentPane().add(P2_Balance, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, 60, 20));
+
+        D_Name.setBackground(new java.awt.Color(59, 59, 59));
+        D_Name.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jLabel5.setBackground(new java.awt.Color(59, 59, 59));
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Dealer");
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        D_Name.add(jLabel5);
+
+        getContentPane().add(D_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 100, 100, -1));
+
+        Double.setBackground(new java.awt.Color(0, 153, 255));
+        Double.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Double.setForeground(new java.awt.Color(255, 255, 255));
+        Double.setText("Double");
+        Double.setBorder(null);
+        Double.setOpaque(true);
+        getContentPane().add(Double, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 540, 90, 40));
+
+        Split.setBackground(new java.awt.Color(204, 204, 204));
+        Split.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Split.setForeground(new java.awt.Color(255, 255, 255));
+        Split.setText("Split");
+        Split.setBorder(null);
+        Split.setOpaque(true);
+        getContentPane().add(Split, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 540, 90, 40));
+
+        Stay.setBackground(new java.awt.Color(0, 153, 255));
+        Stay.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Stay.setForeground(new java.awt.Color(255, 255, 255));
+        Stay.setText("Stay");
+        Stay.setBorder(null);
+        Stay.setOpaque(true);
+        getContentPane().add(Stay, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 90, 40));
+
+        Hit.setBackground(new java.awt.Color(0, 153, 255));
+        Hit.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Hit.setForeground(new java.awt.Color(255, 255, 255));
+        Hit.setText("Hit");
+        Hit.setBorder(null);
+        Hit.setOpaque(true);
+        getContentPane().add(Hit, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 540, 90, 40));
+
+        Table.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/GameTable.png"))); // NOI18N
+        getContentPane().add(Table, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, 350));
+
+        Rules.setBackground(new java.awt.Color(0, 153, 255));
+        Rules.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Rules.setForeground(new java.awt.Color(255, 255, 255));
+        Rules.setText("Rules");
+        Rules.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Rules.setOpaque(true);
+        getContentPane().add(Rules, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, 80, 30));
+
+        Settings.setBackground(new java.awt.Color(0, 153, 255));
+        Settings.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Settings.setForeground(new java.awt.Color(255, 255, 255));
+        Settings.setText("Settings");
+        Settings.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Settings.setOpaque(true);
+        getContentPane().add(Settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 80, 30));
+
+        Exit.setBackground(new java.awt.Color(0, 153, 255));
+        Exit.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        Exit.setForeground(new java.awt.Color(255, 255, 255));
+        Exit.setText("Exit");
+        Exit.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        Exit.setOpaque(true);
+        Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                ExitActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 540, 90, 40));
+        getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, 80, 30));
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 255));
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Hit");
-        jButton1.setBorder(null);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 540, 90, 40));
+        jLabel19.setText("Current Bet");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(0, 153, 255));
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Split");
-        jButton3.setBorder(null);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 540, 90, 40));
-
-        jButton4.setBackground(new java.awt.Color(0, 153, 255));
-        jButton4.setFont(new java.awt.Font("Helvetica Neue", 0, 16)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Double");
-        jButton4.setBorder(null);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 540, 90, 40));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BG_main.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 610));
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BG_main.png"))); // NOI18N
+        Background.setText("jLabel1");
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 610));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        GUI_Start Start = new GUI_Start();
+        Start.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_ExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,11 +316,41 @@ public class GUI_Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel Background;
+    private javax.swing.JPanel Balance;
+    private javax.swing.JPanel Current_Bet;
+    private javax.swing.JPanel D_Name;
+    private javax.swing.JButton Double;
+    private javax.swing.JButton Exit;
+    private javax.swing.JButton Hit;
+    private javax.swing.JPanel Name;
+    private javax.swing.JPanel P1_Balance;
+    private javax.swing.JPanel P1_Name;
+    private javax.swing.JPanel P2_Balance;
+    private javax.swing.JPanel P2_Name;
+    private javax.swing.JButton Rules;
+    private javax.swing.JButton Settings;
+    private javax.swing.JButton Split;
+    private javax.swing.JButton Stay;
+    private javax.swing.JLabel Table;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }

@@ -14,8 +14,8 @@ public class BlackJack_Project {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        GUI_Main bmiG = new GUI_Main();
-        bmiG.setVisible(true);
+        GUI_Start Start = new GUI_Start();
+        Start.setVisible(true);
     }
     
 }
